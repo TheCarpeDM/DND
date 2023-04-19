@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="static/css/style.css" />
+
 </head>
 
 <body class="bg-dark">
@@ -100,49 +101,57 @@
 
               <form>
                 Armor Class: &nbsp;
-                <input type="number" name="armor" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Hit Points: &nbsp;
-                <input type="number" name="points" min="1" max="1000" placeholder="0000"> &nbsp;
+                <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> &nbsp;
               </form>
 
               <form>
                 Strength: &nbsp;
-                <input type="number" name="strength" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="strength" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Dexterity: &nbsp;
-                <input type="number" name="dexterity" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="dexterity" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Constitution: &nbsp;
-                <input type="number" name="constitution" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="constitution" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Intelligence: &nbsp;
-                <input type="number" name="intelligence" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="intelligence" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Wisdom: &nbsp;
-                <input type="number" name="wisdom" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="wisdom" min="1" max="30" placeholder="00"> &nbsp;
               </form>
 
               <form>
                 Charisma: &nbsp;
-                <input type="number" name="charisma" min="1" max="30" placeholder="00"> &nbsp;
+                <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> &nbsp;
               </form>
               
               <input type="submit" value="Create Monster">
 
             </form>
           </div>
+        </div> 
+      </div>
+
+      <!-- Tableau Data Viz -->
+      <tableau-viz id="tableauViz"       
+      src='https://my-server/views/my-workbook/my-view'>
+      </tableau-viz>
+
     </div> 
-  </div> 
-</body>
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+  </body>
 </html>
