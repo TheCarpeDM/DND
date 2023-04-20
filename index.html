@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build-A-Monster</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+</head>
+
+<body class="bg-dark">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">What Do We Want Here?</a>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="display-4">Build-A-Monster</h1>
+          </div>
+
+    <!-- Filter (Code take from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3">
+            <form class="bg-dark">
+              <p>Your Monster's Abilities</p>
+
+              <div class="select" tabindex="0" role="button">
+                <button tabindex="0">Type</button>
+                
+                <div>
+                  <a role="button" tabindex="0" href="#"><span>aberration</span></a>
+                  <a role="button" tabindex="0" href="#"><span>beast</span></a>
+                  <a role="button" tabindex="0" href="#"><span>celestial</span></a>
+                  <a role="button" tabindex="0" href="#"><span>construct</span></a>
+                  <a role="button" tabindex="0" href="#"><span>dragon</span></a>
+                  <a role="button" tabindex="0" href="#"><span>elemental</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fey</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (demon)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (demon, orc)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (demon, shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (devil)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (devil, shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>fiend (yugoloth)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>giant</span></a>
+                  <a role="button" tabindex="0" href="#"><span>giant (stone giant)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (aarakocra)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (any race)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (bullywug)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (dwarf)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (elf)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (gnoll)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (gnome)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (goblinoid)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (grimlock)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (human)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (human, shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (kenku)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (kobold)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (kuo-toa)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (lizardfolk)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (merfolk)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (orc)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (sahuagin)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (troglodyte)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>humanoid (yuan-ti)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>monstrosity</span></a>
+                  <a role="button" tabindex="0" href="#"><span>monstrosity (shapechanger)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>monstrosity (shapechanger, yuan-ti)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>monstrosity (titan)</span></a>
+                  <a role="button" tabindex="0" href="#"><span>ooze</span></a>
+                  <a role="button" tabindex="0" href="#"><span>plant</span></a>
+                  <a role="button" tabindex="0" href="#"><span>swarm of Tiny beasts</span></a>
+                  <a role="button" tabindex="0" href="#"><span>undead</span></a>
+                  <a role="button" tabindex="0" href="#"><span>undead (shapechanger)</span></a>
+                </div>
+              </div>
+
+              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                <button tabindex="0">Size</button>
+                
+                <div>
+                  <a role="button" tabindex="0" href="#"><span>Tiny</span></a>
+                  <a role="button" tabindex="0" href="#"><span>Small</span></a>
+                  <a role="button" tabindex="0" href="#"><span>Medium</span></a>
+                  <a role="button" tabindex="0" href="#"><span>Large</span></a>
+                  <a role="button" tabindex="0" href="#"><span>Huge</span></a>
+                  <a role="button" tabindex="0" href="#"><span>Gargantuan</span></a>
+                </div>
+              </div>
+
+              <form>
+                Armor Class: &nbsp;
+                <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Hit Points: &nbsp;
+                <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> &nbsp;
+              </form>
+
+              <form>
+                Strength: &nbsp;
+                <input class="stats" type="number" name="strength" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Dexterity: &nbsp;
+                <input class="stats" type="number" name="dexterity" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Constitution: &nbsp;
+                <input class="stats" type="number" name="constitution" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Intelligence: &nbsp;
+                <input class="stats" type="number" name="intelligence" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Wisdom: &nbsp;
+                <input class="stats" type="number" name="wisdom" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+
+              <form>
+                Charisma: &nbsp;
+                <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> &nbsp;
+              </form>
+              
+              <input type="submit" value="Create Monster">
+
+            </form>
+          </div>
+        </div> 
+      </div>
+
+      <!-- Tableau Data Viz -->
+      <div class="col-md">
+        <tableau-viz id="tableauViz"       
+        src='https://my-server/views/my-workbook/my-view'>
+        </tableau-viz> 
+      </div>
+      
+
+    </div> 
+    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
