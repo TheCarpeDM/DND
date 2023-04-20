@@ -104,7 +104,7 @@ form {
     --_inner-radius: 10;
     --_inner-padding: 6;
     --inner-radius: calc(var(--_inner-radius) * 1px);
-    --inner-padding: calc(var(--_inner-padding) * 1px);
+    --inner-padding: calc(var(--_inner-padding) * 0.5px);
     --outer-radius: calc(calc(var(--_inner-radius) + var(--_inner-padding)) * 1px);
     --debug: 0;
     --a11y: 0;
@@ -160,7 +160,7 @@ form {
     padding: var(--inner-padding);
     border-radius: var(--outer-radius);
     position: relative;
-    width: 200px;
+    width: 175px;
     z-index: 1;
     transition: background .3s ease, --bg-y .4 ease, --bg-x .4s ease;
     
