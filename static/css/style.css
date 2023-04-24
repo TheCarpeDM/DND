@@ -4,15 +4,29 @@ body {
 
 .jumbotron {
   background-image: url("../images/dungeons-dragons-wallpapers3.jpg");
-  background-size: 100% 100%;
+  background-size: contain;
+  text-align: center;
+}
+
+.push-spaces {
+    height: 500px;
+}
+
+p {
+  font-size: larger;
   text-align: center;
 }
 
 .article-title, .article-p {
   padding: 20px;
 }
+
 form {
   padding: 5px;
+}
+
+button {
+align-content: center;
 }
 
 #filter-btn {
@@ -20,7 +34,15 @@ form {
 }
 
 .stats {
-  text-align: left;
+  text-align: center;
+  font-family: "Mona Sans";
+  float: right;
+}
+
+#monsterButton {
+  text-align: center;
+  align-content: center;
+  display: table-cell;
 }
 
 /* Dropdown Menus (code modified from: https://codepen.io/LukyVj/pen/ZEMrgMr) */

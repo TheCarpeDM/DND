@@ -18,20 +18,20 @@
 <body class="bg-dark">
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <!-- <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html">What Do We Want Here?</a>
-        </nav>
-        <div class="jumbotron">
+        </nav> -->
+        <div class="jumbotron push-spaces">
             <h1 class="display-4">Build-A-Monster</h1>
           </div>
 
     <!-- Filter (Code take from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3">
-            <form class="bg-dark">
+          <div>
+            
               <p>Your Monster's Abilities</p>
-
+              <form class="bg-dark">
               <div class="select" tabindex="0" role="button">
                 <button tabindex="0">Type</button>
                 
@@ -52,8 +52,10 @@
                   <a role="button" tabindex="0" href="#"><span>Undead</span></a>
                 </div>
               </div>
+            </form>
 
-              <div class="select stats" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+            <form class="bg-dark">
+              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
                 <button tabindex="0">Size</button>
                 
                 <div>
@@ -65,48 +67,50 @@
                   <a role="button" tabindex="0" href="#"><span>Gargantuan</span></a>
                 </div>
               </div>
+            </form>
 
-              <form>
-                Armor Class: &nbsp;
-                <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Armor Class:
+              <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Hit Points: &nbsp;
-                <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> &nbsp;
-              </form>
+            <form>
+              Hit Points: 
+              <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> 
+            </form>
 
-              <form>
-                Strength: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <input class="stats" type="number" name="strength" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Strength:
+              <input class="stats" type="number" name="strength" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Dexterity: &nbsp; &nbsp; &nbsp; &nbsp;
-                <input class="stats" type="number" name="dexterity" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Dexterity: 
+              <input class="stats" type="number" name="dexterity" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Constitution: &nbsp;
-                <input class="stats" type="number" name="constitution" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Constitution: 
+              <input class="stats" type="number" name="constitution" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Intelligence: &nbsp; &nbsp;
-                <input class="stats" type="number" name="intelligence" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Intelligence: 
+              <input class="stats" type="number" name="intelligence" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Wisdom: &nbsp; &nbsp; &nbsp; &nbsp;
-                <input class="stats" type="number" name="wisdom" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Wisdom: 
+              <input class="stats" type="number" name="wisdom" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <form>
-                Charisma: &nbsp; &nbsp; &nbsp;
-                <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> &nbsp;
-              </form>
+            <form>
+              Charisma: 
+              <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> 
+            </form>
 
-              <div class="select stats" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+              <form class="bg-dark">
+              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
                 <button tabindex="0">Fly</button>
                 
                 <div>
@@ -115,7 +119,7 @@
                 </div>
               </div>
 
-              <div class="select stats" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
                 <button tabindex="0">Swim</button>
                 
                 <div>
@@ -124,7 +128,7 @@
                 </div>
               </div>
 
-              <div class="select stats" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
                 <button tabindex="0">Legendary</button>
                 
                 <div>
@@ -132,8 +136,10 @@
                   <a role="button" tabindex="0" href="#"><span>No</span></a>
                 </div>
               </div>
+            </form>
+
               
-              <input type="submit" value="Create Monster">
+              <input id="monsterButton" type="submit" value="Create Monster" style="margin-left: 20%;"/>
 
             </form>
           </div>
@@ -141,11 +147,31 @@
       </div>
 
       <!-- Tableau Data Viz -->
-      <div class="col-md">
+      <!-- <div class="visualization col-md-4">
         <tableau-viz id="tableauViz"       
         src='https://my-server/views/my-workbook/my-view'>
         </tableau-viz> 
-      </div>
+        <p>Tableau Placeholder</p>
+      </div> -->
+      <div class='tableauPlaceholder' id='viz1682209828270' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='NYC Citi Bike ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bikesharing_16775341407800&#47;NYCCitiBike&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='Bikesharing_16775341407800&#47;NYCCitiBike' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bikesharing_16775341407800&#47;NYCCitiBike&#47;1.png' /> 
+          <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' /><param name='language' value='en-US' />
+        </object>
+      </div>                
+      <script type='text/javascript'> var divElement = document.getElementById('viz1682209828270'); var vizElement = divElement.getElementsByTagName('object')[0]; if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';} var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
       
 
     </div> 
