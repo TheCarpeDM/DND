@@ -17,10 +17,6 @@
 
 <body class="bg-dark">
     <div class="wrapper">
-        <!-- Navbar -->
-        <!-- <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">What Do We Want Here?</a>
-        </nav> -->
         <div class="jumbotron push-spaces">
             <h1 class="display-4">Build-A-Monster</h1>
           </div>
@@ -28,7 +24,7 @@
     <!-- Filter (Code take from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
     <div class="container-fluid">
         <div class="row">
-          <div>
+          <div class="col-md-3">
             
               <p>Your Monster's Abilities</p>
               <form class="bg-dark">
@@ -140,42 +136,60 @@
 
               
               <input id="monsterButton" type="submit" value="Create Monster" style="margin-left: 20%;"/>
-
+            
             </form>
           </div>
-        </div> 
-      </div>
 
       <!-- Tableau Data Viz -->
-      <!-- <div class="visualization col-md-4">
-        <tableau-viz id="tableauViz"       
-        src='https://my-server/views/my-workbook/my-view'>
-        </tableau-viz> 
-        <p>Tableau Placeholder</p>
-      </div> -->
-      <div class='tableauPlaceholder' id='viz1682209828270' style='position: relative'>
+      <div class='tableauPlaceholder col-md-9' id='viz1682383312168' style='position: relative'>
         <noscript>
           <a href='#'>
-            <img alt='NYC Citi Bike ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bikesharing_16775341407800&#47;NYCCitiBike&#47;1_rss.png' style='border: none' />
+            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterViz&#47;Dashboard1&#47;1_rss.png' style='border: none' />
           </a>
         </noscript>
         <object class='tableauViz'  style='display:none;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
           <param name='embed_code_version' value='3' /> 
           <param name='site_root' value='' />
-          <param name='name' value='Bikesharing_16775341407800&#47;NYCCitiBike' />
-          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
-          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bi&#47;Bikesharing_16775341407800&#47;NYCCitiBike&#47;1.png' /> 
-          <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' /><param name='language' value='en-US' />
+          <param name='name' value='MonsterViz&#47;Dashboard1' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterViz&#47;Dashboard1&#47;1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+          <param name='filter' value='publish=yes' />
         </object>
       </div>                
-      <script type='text/javascript'> var divElement = document.getElementById('viz1682209828270'); var vizElement = divElement.getElementsByTagName('object')[0]; if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='1327px';} var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
-      
+      <script type='text/javascript'> 
+      var divElement = document.getElementById('viz1682383312168'); 
+      var vizElement = divElement.getElementsByTagName('object')[0];                    
+      if ( divElement.offsetWidth > 800 ) { 
+        vizElement.style.minWidth='420px';
+      //vizElement.style.maxWidth='650px';
+      vizElement.style.width='100%';
+      vizElement.style.minHeight='587px';
+      //vizElement.style.maxHeight='887px';
+      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+    } else if ( divElement.offsetWidth > 500 ) { 
+      vizElement.style.minWidth='420px';
+      //vizElement.style.maxWidth='650px';
+      vizElement.style.width='100%';
+      vizElement.style.minHeight='587px';
+      //vizElement.style.maxHeight='887px';
+      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
+  } else { vizElement.style.width='100%';
+  vizElement.style.height='777px';
+}                     
+var scriptElement = document.createElement('script');                    
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
 
-    </div> 
-    <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+    </div>
+  </div>
     <script src="static/js/app.js"></script>
   </body>
 </html>
