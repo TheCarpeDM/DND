@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+.display-4 {
+  font-weight: bolder;
+  text-shadow: 0 0 10px crimson, 0 0 10px #000000;
+}
+
 .push-spaces {
     height: auto;
     width: auto;
@@ -15,6 +20,16 @@ body {
 
 p {
   font-size: larger;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: crimson;
+  text-decoration-color: rgb(11, 1, 1);
+}
+
+.party-stats {
   text-align: center;
 }
 
