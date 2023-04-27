@@ -21,12 +21,32 @@
             <h1 class="display-4">Build-A-Monster</h1>
           </div>
 
-    <!-- Filter (Code take from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
+    <!-- Filter (Code modified from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
     <div class="container-fluid">
         <div class="row">
           <div class="col-md-3">
             
               <p>Your Monster's Abilities</p>
+              <!-- Backup code for dropdowns -->
+              <!-- <label for="type">Type:</label>
+
+                <select name="type" id="type">
+                <option value="">Aberration</option>
+                <option value="">Beast</option>
+                <option value="">Celestial</option>
+                <option value="">Construct</option>
+                <option value="">Dragon</option>
+                <option value="">Elemental</option>
+                <option value="">Fey</option>
+                <option value="">Fiend</option>
+                <option value="">Giant</option>
+                <option value="">Monstrosity</option>
+                <option value="">Ooze</option>
+                <option value="">Plant</option>
+                <option value="">Swarm of Tiny Beasts</option>
+                <option value="">Undead</option>
+                </select> -->
+
               <form class="bg-dark">
               <div class="select" tabindex="0" role="button">
                 <button tabindex="0">Type</button>
@@ -50,6 +70,17 @@
               </div>
             </form>
 
+            <!-- Backup dropdown menu
+            <label for="type">Size:</label>
+
+                <select name="size" id="size">
+                <option value="">Tiny</option>
+                <option value="">Small</option>
+                <option value="">Medium</option>
+                <option value="">Large</option>
+                <option value="">Huge</option>
+                <option value="">Gargantuan</option> -->
+
             <form class="bg-dark">
               <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
                 <button tabindex="0">Size</button>
@@ -65,14 +96,68 @@
               </div>
             </form>
 
-            <form>
-              Armor Class:
-              <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> 
-            </form>
+            <!-- Backup menu code -->
+            <!-- <form>
+            <label for="fly">Fly:</label>
+
+                <select name="fly" id="fly">
+                <option value="">Yes</option>
+                <option value="">No</option>
+              </form> -->
+
+              <form class="bg-dark">
+                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                  <button tabindex="0">Fly</button>
+                  
+                  <div>
+                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
+                    <a role="button" tabindex="0" href="#"><span>No</span></a>
+                  </div>
+                </div>
+  
+                <!-- Backup menu code -->
+                <!-- <form>
+              <label for="swim">Swim:</label>
+  
+                  <select name="swim" id="swim">
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </form> -->
+  
+                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                  <button tabindex="0">Swim</button>
+                  
+                  <div>
+                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
+                    <a role="button" tabindex="0" href="#"><span>No</span></a>
+                  </div>
+                </div>
+  
+                <!-- Backup menu code -->
+              <!-- <label for="type">Legendary:</label>
+  
+                  <select name="type" id="type">
+                  <option value="volvo">Yes</option>
+                  <option value="saab">No</option> -->
+  
+                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                  <button tabindex="0">Legendary</button>
+                  
+                  <div>
+                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
+                    <a role="button" tabindex="0" href="#"><span>No</span></a>
+                  </div>
+                </div>
+              </form>
 
             <form>
               Hit Points: 
               <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> 
+            </form>
+
+            <form>
+              Armor Class:
+              <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> 
             </form>
 
             <form>
@@ -104,36 +189,6 @@
               Charisma: 
               <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> 
             </form>
-
-              <form class="bg-dark">
-              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                <button tabindex="0">Fly</button>
-                
-                <div>
-                  <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                  <a role="button" tabindex="0" href="#"><span>No</span></a>
-                </div>
-              </div>
-
-              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                <button tabindex="0">Swim</button>
-                
-                <div>
-                  <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                  <a role="button" tabindex="0" href="#"><span>No</span></a>
-                </div>
-              </div>
-
-              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                <button tabindex="0">Legendary</button>
-                
-                <div>
-                  <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                  <a role="button" tabindex="0" href="#"><span>No</span></a>
-                </div>
-              </div>
-            </form>
-
               
               <input id="monsterButton" type="submit" value="Create Monster" style="margin-left: 20%;"/>
             
@@ -172,14 +227,14 @@
       //vizElement.style.maxWidth='650px';
       vizElement.style.width='100%';
       vizElement.style.minHeight='587px';
-      //vizElement.style.maxHeight='887px';
+      vizElement.style.maxHeight='887px';
       vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
     } else if ( divElement.offsetWidth > 500 ) { 
       vizElement.style.minWidth='420px';
       //vizElement.style.maxWidth='650px';
       vizElement.style.width='100%';
       vizElement.style.minHeight='587px';
-      //vizElement.style.maxHeight='887px';
+      vizElement.style.maxHeight='887px';
       vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
   } else { vizElement.style.width='100%';
   vizElement.style.height='777px';
