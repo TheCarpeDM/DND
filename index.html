@@ -124,8 +124,9 @@
                   <option value="">No</option>
                 </form> -->
   
-                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                  <button tabindex="0">Swim</button>
+                <form class="bg-dark">
+                  <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                    <button tabindex="0">Swim</button>
                   
                   <div>
                     <a role="button" tabindex="0" href="#"><span>Yes</span></a>
@@ -136,12 +137,13 @@
                 <!-- Backup menu code -->
               <!-- <label for="type">Legendary:</label>
   
-                  <select name="type" id="type">
-                  <option value="volvo">Yes</option>
-                  <option value="saab">No</option> -->
+                  <select name="" id="">
+                  <option value="">Yes</option>
+                  <option value="">No</option> -->
   
-                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                  <button tabindex="0">Legendary</button>
+                  <form class="bg-dark">
+                    <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
+                      <button tabindex="0">Legendary</button>
                   
                   <div>
                     <a role="button" tabindex="0" href="#"><span>Yes</span></a>
@@ -189,6 +191,11 @@
               Charisma: 
               <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> 
             </form>
+
+            <form>
+              Party Size: 
+              <input class="stats" type="number" name="party-size" min="1" max="6" placeholder="0"> 
+            </form>
               
               <input id="monsterButton" type="submit" value="Create Monster" style="margin-left: 20%;"/>
             
@@ -224,14 +231,14 @@
       var vizElement = divElement.getElementsByTagName('object')[0];                    
       if ( divElement.offsetWidth > 800 ) { 
         vizElement.style.minWidth='420px';
-      //vizElement.style.maxWidth='650px';
+      vizElement.style.maxWidth='auto';
       vizElement.style.width='100%';
       vizElement.style.minHeight='587px';
       vizElement.style.maxHeight='887px';
       vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
     } else if ( divElement.offsetWidth > 500 ) { 
       vizElement.style.minWidth='420px';
-      //vizElement.style.maxWidth='650px';
+      vizElement.style.maxWidth='auto';
       vizElement.style.width='100%';
       vizElement.style.minHeight='587px';
       vizElement.style.maxHeight='887px';
