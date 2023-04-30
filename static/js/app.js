@@ -455,7 +455,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
     console.log(`monsterXP : ${(monsterXP)}`);
 
     // Calcualte party's difficulty defeating the monster based on number of players and average party level inputed and the set character XP for each player level and difficulty.
+<<<<<<< HEAD
+    if (average_party_level == 1) {
+=======
     if (average_party_level = 1) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 1");
         if (50*number_players > monsterXP) {
             var difficulty = "easy";
@@ -473,7 +477,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
             var difficulty = "unpredictable";
             console.log("ASSIGNED UPREDICTABLE");
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 2) {
+=======
      } else if (average_party_level = 2) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 2");
         if (100*number_players > monsterXP) {
             var difficulty = "easy";
@@ -486,7 +494,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 3) {
+=======
      } else if (average_party_level = 3) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 3");
         if (150*number_players > monsterXP) {
             var difficulty = "easy";
@@ -499,7 +511,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 4) {
+=======
      } else if (average_party_level = 4) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 4");
         if (250*number_players > monsterXP) {
             var difficulty = "easy";
@@ -512,7 +528,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 5) {
+=======
      } else if (average_party_level = 5) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 5");
         if (500*number_players > monsterXP) {
             var difficulty = "easy";
@@ -525,7 +545,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 6) {
+=======
      } else if (average_party_level = 6) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 6");
         if (600*number_players > monsterXP) {
             var difficulty = "easy";
@@ -538,7 +562,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 7) {
+=======
      } else if (average_party_level = 7) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 7");
         if (750*number_players > monsterXP) {
             var difficulty = "easy";
@@ -551,7 +579,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 8) {
+=======
      } else if (average_party_level = 8) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 8");
         if (900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -564,7 +596,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 9) {
+=======
      } else if (average_party_level = 9) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 9");
         if (1100*number_players > monsterXP) {
             var difficulty = "easy";
@@ -577,7 +613,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 10) {
+=======
      } else if (average_party_level = 10) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 10");
         if (1200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -595,7 +635,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
             var difficulty = "unpredictable";
             console.log("ASSIGNED UNPREDICTABLE");
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 11) {
+=======
      } else if (average_party_level = 11) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 11");
         if (1600*number_players > monsterXP) {
             var difficulty = "easy";
@@ -608,7 +652,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 12) {
+=======
      } else if (average_party_level = 12) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 12");
         if (2000*number_players > monsterXP) {
             var difficulty = "easy";
@@ -621,7 +669,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 13) {
+=======
      } else if (average_party_level = 13) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 13");
         if (2200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -634,7 +686,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 14) {
+=======
      } else if (average_party_level = 14) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 14");
         if (2500*number_players > monsterXP) {
             var difficulty = "easy";
@@ -647,7 +703,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 15) {
+=======
      } else if (average_party_level = 15) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 15");
         if (2800*number_players > monsterXP) {
             var difficulty = "easy";
@@ -660,7 +720,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 16) {
+=======
      } else if (average_party_level = 16) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 16");
         if (3200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -673,7 +737,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
+<<<<<<< HEAD
+     } else if (average_party_level == 17) {
+=======
      } else if (average_party_level = 17) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 17");
         if (3900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -686,7 +754,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         };
+<<<<<<< HEAD
+     } else if (average_party_level == 18) {
+=======
      } else if (average_party_level = 18) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 18");
         if (4200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -699,7 +771,11 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         };
+<<<<<<< HEAD
+     } else if (average_party_level == 19) {
+=======
      } else if (average_party_level = 19) {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 19");
         if (4900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -739,6 +815,18 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
 function addtoHTML(crInteger, ajustedCRInteger, difficulty, number_players) {
     
     // Assigning HTML content for difficulty section
+<<<<<<< HEAD
+    if (difficulty == "easy") {
+        var formattedDifficulty = "EASY";
+        var formatteddescription = "Your party should make it past an encounter with this monster.";
+    } else if (difficulty == "medium") {
+        var formattedDifficulty = "MEDIUM";
+        var formatteddescription = "An encounter with this monster is a a good match for your party.";
+    } else if (difficulty == "hard") {
+        var formattedDifficulty = "HARD";
+        var formatteddescription = "An encounter with this monster will be difficult for your party.";
+    } else if (difficulty == "deadly") {
+=======
     if (difficulty = "easy") {
         var formattedDifficulty = "EASY";
         var formatteddescription = "Your party should make it past an encounter with this monster.";
@@ -749,6 +837,7 @@ function addtoHTML(crInteger, ajustedCRInteger, difficulty, number_players) {
         var formattedDifficulty = "HARD";
         var formatteddescription = "An encounter with this monster will be difficult for your party.";
     } else if (difficulty = "deadly") {
+>>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         var formattedDifficulty = "DEADLY";
         var formatteddescription = "An encounter with this monster should be avoided";
     } else {
