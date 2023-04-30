@@ -67,233 +67,233 @@ function getInputValues(){
 
     // Encoding type input to fit the linear regression model
     if (newType = "Aberration") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Beast") {
-        var type_beast = 1; 
-        var type_celestial = 0; 
+        var type_beast = 1;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Celestial") {
-        var type_beast = 0; 
-        var type_celestial = 1; 
+        var type_beast = 0;
+        var type_celestial = 1;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Construct") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 1;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Dragon") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 1;                                             
+        var type_dragon = 1;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Elemental") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 1;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Fey") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 1;  
+        var type_fey = 1;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Fiend") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 1;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Giant") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 1;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Monstrosity") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 1; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 1;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Plant") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 1;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 1;
         var type_swarmofTinybeasts = 0;
         var type_undead = 0;
      } else if (newType = "Swarm of Tiny Beasts") {
-        var type_beast = 0; 
-        var type_celestial = 0; 
+        var type_beast = 0;
+        var type_celestial = 0;
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 1;
         var type_undead = 0;
      } else if (newType = "Undead") {
-        var type_beast = 0; 
+        var type_beast = 0;
         var type_celestial = 0; 
         var type_construct = 0;
-        var type_dragon = 0;                                             
+        var type_dragon = 0;
         var type_elemental = 0;
-        var type_fey = 0;  
+        var type_fey = 0;
         var type_fiend = 0;
         var type_giant = 0;
-        var type_humanoid = 0; 
-        var type_monstrosity = 0; 
-        var type_ooze = 0;   
-        var type_plant = 0;  
+        var type_humanoid = 0;
+        var type_monstrosity = 0;
+        var type_ooze = 0;
+        var type_plant = 0;
         var type_swarmofTinybeasts = 0;
         var type_undead = 1;
      } else {
-        var type_beast = 1; 
-        var type_celestial = 1; 
+        var type_beast = 1;
+        var type_celestial = 1;
         var type_construct = 1;
-        var type_dragon = 1;                                             
+        var type_dragon = 1;
         var type_elemental = 1;
-        var type_fey = 1;  
+        var type_fey = 1;
         var type_fiend = 1;
         var type_giant = 1;
-        var type_humanoid = 1; 
-        var type_monstrosity = 1; 
-        var type_ooze = 1;   
-        var type_plant = 1;  
+        var type_humanoid = 1;
+        var type_monstrosity = 1;
+        var type_ooze = 1;
+        var type_plant = 1;
         var type_swarmofTinybeasts = 1;
         var type_undead = 1;
      };
 
     // Encoding size input to fit the linear regression model
     if (newSize = "Tiny") {
-        var size = 1; 
+        var size = 1;
      } else if (newSize = "Small") {
-        var size = 2; 
+        var size = 2;
      } else if (newSize = "Medium") {
-        var size = 3; 
+        var size = 3;
      } else if (newSize = "Large") {
-        var size = 4; 
+        var size = 4;
      } else if (newSize = "Huge") {
-        var size = 5; 
+        var size = 5;
      } else if (newSize = "Gargantuan") {
-        var size = 6; 
+        var size = 6;
      } else {
-        var size = 100; 
-     };     
+        var size = 100;
+     };
 
     // Encoding legendary inout to fit the linear regression model
     if (newLegendary = "Yes") {
@@ -301,7 +301,7 @@ function getInputValues(){
      } else if (newLegendary = "No") {
         var legendary_nan = 1;
      } else {
-        var legendary_nan = 100; 
+        var legendary_nan = 100;
      };
 
     // Encoding fly input to fit the linear regression model
@@ -310,8 +310,8 @@ function getInputValues(){
      } else if (newFly = "No") {
         var flyYes = 0;
      } else {
-        var flyYes = 100; 
-     };    
+        var flyYes = 100;
+     };
 
     // Encoding swim input to fit the linear regression model
     if (newSwim = "Yes") {
@@ -319,8 +319,8 @@ function getInputValues(){
      } else if (newSwim = "No") {
         var swimYes = 0;
      } else {
-        var swimYes = 100; 
-     };  
+        var swimYes = 100;
+     };
 
     // Print variables to console for testing
     console.log(`Size : ${(size)}`);
@@ -360,30 +360,30 @@ function getInputValues(){
 function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, flyYes, swimYes, type_beast, type_celestial, type_construct, type_dragon, type_elemental, type_fey, type_fiend, type_giant, type_humanoid, type_monstrosity, type_ooze, type_plant, type_swarmofTinybeasts, type_undead, number_players, average_party_level){
     
     // Coefficents from CR linear regression
-    var sizeCoef = 0.07909636;  
-    var acCoef = 0.18098322;  
+    var sizeCoef = 0.07909636;
+    var acCoef = 0.18098322;
     var hpCoef = 0.03810668;
-    var strCoef = -0.05702636; 
+    var strCoef = -0.05702636;
     var dexCoef = -0.03802873;
-    var conCoef = 0.12440479; 
-    var intCoef = 0.14611386;  
-    var wisCoef = 0.14004083;  
-    var chaCoef = 0.05820986; 
+    var conCoef = 0.12440479;
+    var intCoef = 0.14611386;
+    var wisCoef = 0.14004083;
+    var chaCoef = 0.05820986;
     var legendary_nanCoef = -3.02979347;
-    var fly_YesCoef = -0.32659132; 
-    var swim_YesCoef = -0.43662237; 
-    var type_beastCoef = 1.20509042; 
-    var type_celestialCoef = -0.24721319; 
+    var fly_YesCoef = -0.32659132;
+    var swim_YesCoef = -0.43662237;
+    var type_beastCoef = 1.20509042;
+    var type_celestialCoef = -0.24721319;
     var type_constructCoef = 2.58533629;
     var type_dragonCoef = -0.32959655;
     var type_elementalCoef = 0.47856361;
-    var type_feyCoef = -1.49799827;  
+    var type_feyCoef = -1.49799827;
     var type_fiendCoef = 1.71708598;
     var type_giantCoef = 0.90638153;
-    var type_humanoidCoef = -0.0469929; 
-    var type_monstrosityCoef = 0.782792; 
-    var type_oozeCoef = 1.6085642;   
-    var type_plantCoef = 0.92353568;  
+    var type_humanoidCoef = -0.0469929;
+    var type_monstrosityCoef = 0.782792;
+    var type_oozeCoef = 1.6085642;
+    var type_plantCoef = 0.92353568;
     var type_swarmofTinybeastsCoef = 1.68812587;
     var type_undeadCoef = 1.27772706;
     var intercept = -3.0885579750289986;
@@ -427,12 +427,12 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
 
     // CR Adjustment for party size and rounded to the hundredth decimal
     if (number_players <= 2) {
-        ajustedCR = (cr * 1.5); 
+        ajustedCR = (cr * 1.5);
      } else if (number_players >= 6) {
-        ajustedCR = (cr * .5); 
+        ajustedCR = (cr * .5);
      } else {
-        ajustedCR = cr; 
-     }; 
+        ajustedCR = cr;
+     };
 
     var ajustedCRRounded = Math.round(ajustedCR * 100) / 100
     var ajustedCRInteger = Math.round(ajustedCR)
@@ -455,11 +455,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
     console.log(`monsterXP : ${(monsterXP)}`);
 
     // Calcualte party's difficulty defeating the monster based on number of players and average party level inputed and the set character XP for each player level and difficulty.
-<<<<<<< HEAD
     if (average_party_level == 1) {
-=======
-    if (average_party_level = 1) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 1");
         if (50*number_players > monsterXP) {
             var difficulty = "easy";
@@ -477,11 +473,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
             var difficulty = "unpredictable";
             console.log("ASSIGNED UPREDICTABLE");
         }
-<<<<<<< HEAD
      } else if (average_party_level == 2) {
-=======
-     } else if (average_party_level = 2) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 2");
         if (100*number_players > monsterXP) {
             var difficulty = "easy";
@@ -494,11 +486,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 3) {
-=======
-     } else if (average_party_level = 3) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 3");
         if (150*number_players > monsterXP) {
             var difficulty = "easy";
@@ -511,11 +499,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 4) {
-=======
-     } else if (average_party_level = 4) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 4");
         if (250*number_players > monsterXP) {
             var difficulty = "easy";
@@ -528,11 +512,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 5) {
-=======
-     } else if (average_party_level = 5) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 5");
         if (500*number_players > monsterXP) {
             var difficulty = "easy";
@@ -545,11 +525,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 6) {
-=======
-     } else if (average_party_level = 6) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 6");
         if (600*number_players > monsterXP) {
             var difficulty = "easy";
@@ -562,11 +538,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 7) {
-=======
-     } else if (average_party_level = 7) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 7");
         if (750*number_players > monsterXP) {
             var difficulty = "easy";
@@ -579,11 +551,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 8) {
-=======
-     } else if (average_party_level = 8) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 8");
         if (900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -596,11 +564,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 9) {
-=======
-     } else if (average_party_level = 9) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 9");
         if (1100*number_players > monsterXP) {
             var difficulty = "easy";
@@ -613,11 +577,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 10) {
-=======
-     } else if (average_party_level = 10) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 10");
         if (1200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -635,11 +595,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
             var difficulty = "unpredictable";
             console.log("ASSIGNED UNPREDICTABLE");
         }
-<<<<<<< HEAD
      } else if (average_party_level == 11) {
-=======
-     } else if (average_party_level = 11) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 11");
         if (1600*number_players > monsterXP) {
             var difficulty = "easy";
@@ -652,11 +608,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 12) {
-=======
-     } else if (average_party_level = 12) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 12");
         if (2000*number_players > monsterXP) {
             var difficulty = "easy";
@@ -669,11 +621,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 13) {
-=======
-     } else if (average_party_level = 13) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 13");
         if (2200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -686,11 +634,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 14) {
-=======
-     } else if (average_party_level = 14) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 14");
         if (2500*number_players > monsterXP) {
             var difficulty = "easy";
@@ -703,11 +647,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 15) {
-=======
-     } else if (average_party_level = 15) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 15");
         if (2800*number_players > monsterXP) {
             var difficulty = "easy";
@@ -720,11 +660,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 16) {
-=======
-     } else if (average_party_level = 16) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 16");
         if (3200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -737,11 +673,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         }
-<<<<<<< HEAD
      } else if (average_party_level == 17) {
-=======
-     } else if (average_party_level = 17) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 17");
         if (3900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -754,11 +686,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         };
-<<<<<<< HEAD
      } else if (average_party_level == 18) {
-=======
-     } else if (average_party_level = 18) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 18");
         if (4200*number_players > monsterXP) {
             var difficulty = "easy";
@@ -771,11 +699,7 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
         } else {
             var difficulty = "unpredictable";
         };
-<<<<<<< HEAD
      } else if (average_party_level == 19) {
-=======
-     } else if (average_party_level = 19) {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         console.log("ENTERED APL 19");
         if (4900*number_players > monsterXP) {
             var difficulty = "easy";
@@ -815,7 +739,6 @@ function formulas(size, ac, hp, str, dex, con, int, wis, cha, legendary_nan, fly
 function addtoHTML(crInteger, ajustedCRInteger, difficulty, number_players) {
     
     // Assigning HTML content for difficulty section
-<<<<<<< HEAD
     if (difficulty == "easy") {
         var formattedDifficulty = "EASY";
         var formatteddescription = "Your party should make it past an encounter with this monster.";
@@ -826,18 +749,6 @@ function addtoHTML(crInteger, ajustedCRInteger, difficulty, number_players) {
         var formattedDifficulty = "HARD";
         var formatteddescription = "An encounter with this monster will be difficult for your party.";
     } else if (difficulty == "deadly") {
-=======
-    if (difficulty = "easy") {
-        var formattedDifficulty = "EASY";
-        var formatteddescription = "Your party should make it past an encounter with this monster.";
-    } else if (difficulty = "medium") {
-        var formattedDifficulty = "MEDIUM";
-        var formatteddescription = "An encounter with this monster is a a good match for your party.";
-    } else if (difficulty = "hard") {
-        var formattedDifficulty = "HARD";
-        var formatteddescription = "An encounter with this monster will be difficult for your party.";
-    } else if (difficulty = "deadly") {
->>>>>>> 28f4930a006d8a608990d21eb8687bf7efaa7fd0
         var formattedDifficulty = "DEADLY";
         var formatteddescription = "An encounter with this monster should be avoided";
     } else {
