@@ -6,265 +6,233 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build-A-Monster</title>
     <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="static/css/style.css" />
-
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"/>
 </head>
-
 <body class="bg-dark">
     <div class="wrapper">
-        <div class="jumbotron push-spaces">
-            <h1 class="display-4">Build-A-Monster</h1>
-          </div>
-
-    <!-- Filter (Code modified from: https://codepen.io/LukyVj/pen/ZEMrgMr) -->
-    <div class="container-fluid">
+        <div class="jumbotron push-spaces text-center" style="background-image: url('static/img/dungeons-dragons-wallpapers3.jpg'); background-size: contain;">
+            <h1 class="text-light" style="font-weight: bolder; font-size:54px; text-shadow: 0 0 10px crimson, 0 0 10px #000000;">Build-A-Monster</h1>
+        </div>
+    </div>    
+    <div class="container-fluid">   
         <div class="row">
-          <div class="col-md-3">
-            
-              <p>Your Monster's Abilities</p>
-              <!-- Backup code for dropdowns -->
-              <!-- <label for="type">Type:</label>
-
-                <select name="type" id="type">
-                <option value="">Aberration</option>
-                <option value="">Beast</option>
-                <option value="">Celestial</option>
-                <option value="">Construct</option>
-                <option value="">Dragon</option>
-                <option value="">Elemental</option>
-                <option value="">Fey</option>
-                <option value="">Fiend</option>
-                <option value="">Giant</option>
-                <option value="">Monstrosity</option>
-                <option value="">Ooze</option>
-                <option value="">Plant</option>
-                <option value="">Swarm of Tiny Beasts</option>
-                <option value="">Undead</option>
-                </select> -->
-
-              <form class="bg-dark">
-              <div class="select" tabindex="0" role="button">
-                <button tabindex="0">Type</button>
-                
-                <div>
-                  <a role="button" tabindex="0" href="#"><span>Aberration</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Beast</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Celestial</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Construct</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Dragon</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Elemental</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Fey</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Fiend</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Giant</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Monstrosity</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Ooze</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Plant</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Swarm of Tiny Beasts</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Undead</span></a>
+            <div class="col-lg-4">
+                <h3 class="text-center text-light py-3">Pick Your Monster's Abilities</h3>
+                <form>
+                <div class="row py-1">
+                    <div class="col-lg-5">
+                        <h4 class="text-light">Type:</h4>
+                    </div>
+                    <div class="col-lg-7">
+                        <select class="form-control" id="type">
+                        <option>Aberration</option>
+                        <option>Beast</option>
+                        <option>Celestial</option>
+                        <option>Construct</option>
+                        <option>Dragon</option>
+                        <option>Elemental</option>
+                        <option>Fey</option>
+                        <option>Fiend</option>
+                        <option>Giant</option>
+                        <option>Monstrosity</option>
+                        <option>Ooze</option>
+                        <option>Plant</option>
+                        <option>Swarm of Tiny Beasts</option>
+                        <option>Undead</option>
+                        </select>
+                    </div>
                 </div>
-              </div>
-            </form>
-
-            <!-- Backup dropdown menu
-            <label for="type">Size:</label>
-
-                <select name="size" id="size">
-                <option value="">Tiny</option>
-                <option value="">Small</option>
-                <option value="">Medium</option>
-                <option value="">Large</option>
-                <option value="">Huge</option>
-                <option value="">Gargantuan</option> -->
-
-            <form class="bg-dark">
-              <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                <button tabindex="0">Size</button>
-                
-                <div>
-                  <a role="button" tabindex="0" href="#"><span>Tiny</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Small</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Medium</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Large</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Huge</span></a>
-                  <a role="button" tabindex="0" href="#"><span>Gargantuan</span></a>
+                <div class="row py-1">
+                    <div class="col-lg-7">
+                        <h4 class="text-light">Size:</h4>
+                    </div>
+                    <div class="col-lg-5">
+                        <select class="form-control" id="size">
+                        <option>Tiny</option>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>Huge</option>
+                        <option>Gargantuan</option>
+                        </select>
+                    </div>
                 </div>
-              </div>
-            </form>
-
-            <!-- Backup menu code -->
-            <!-- <form>
-            <label for="fly">Fly:</label>
-
-                <select name="fly" id="fly">
-                <option value="">Yes</option>
-                <option value="">No</option>
-              </form> -->
-
-              <form class="bg-dark">
-                <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                  <button tabindex="0">Fly</button>
-                  
-                  <div>
-                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                    <a role="button" tabindex="0" href="#"><span>No</span></a>
-                  </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Armor Class:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="armor-class" min="1" max="30" placeholder="00">
+                    </div>
                 </div>
-  
-                <!-- Backup menu code -->
-                <!-- <form>
-              <label for="swim">Swim:</label>
-  
-                  <select name="swim" id="swim">
-                  <option value="">Yes</option>
-                  <option value="">No</option>
-                </form> -->
-  
-                <form class="bg-dark">
-                  <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                    <button tabindex="0">Swim</button>
-                  
-                  <div>
-                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                    <a role="button" tabindex="0" href="#"><span>No</span></a>
-                  </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Hit Points:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="hit-points" min="1" max="1000" placeholder="0000">
+                    </div>
                 </div>
-  
-                <!-- Backup menu code -->
-              <!-- <label for="type">Legendary:</label>
-  
-                  <select name="" id="">
-                  <option value="">Yes</option>
-                  <option value="">No</option> -->
-  
-                  <form class="bg-dark">
-                    <div class="select" tabindex="0" role="button" style="--a11y: 1;--outline-color: hsla(calc(var(--accent-color-hue)*1deg) 100% 58% / calc(var(--a11y)*100%));">
-                      <button tabindex="0">Legendary</button>
-                  
-                  <div>
-                    <a role="button" tabindex="0" href="#"><span>Yes</span></a>
-                    <a role="button" tabindex="0" href="#"><span>No</span></a>
-                  </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Strength:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="strength" min="1" max="30" placeholder="00">
+                    </div>
                 </div>
-              </form>
-
-            <form>
-              Hit Points: 
-              <input class="stats" type="number" name="points" min="1" max="1000" placeholder="0000"> 
-            </form>
-
-            <form>
-              Armor Class:
-              <input class="stats" type="number" name="armor" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Strength:
-              <input class="stats" type="number" name="strength" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Dexterity: 
-              <input class="stats" type="number" name="dexterity" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Constitution: 
-              <input class="stats" type="number" name="constitution" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Intelligence: 
-              <input class="stats" type="number" name="intelligence" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Wisdom: 
-              <input class="stats" type="number" name="wisdom" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Charisma: 
-              <input class="stats" type="number" name="charisma" min="1" max="30" placeholder="00"> 
-            </form>
-
-            <form>
-              Party Size: 
-              <input class="stats" type="number" name="party-size" min="1" max="6" placeholder="0"> 
-            </form>
-              
-              <input id="monsterButton" type="submit" value="Create Monster" style="margin-left: 20%;"/>
-            
-            </form>
-          </div>
-
-      <!-- Tableau Data Viz -->
-      <div class='tableauPlaceholder col-md-9' id='viz1682383312168' style='position: relative'>
-        <noscript>
-          <a href='#'>
-            <img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterViz&#47;Dashboard1&#47;1_rss.png' style='border: none' />
-          </a>
-        </noscript>
-        <object class='tableauViz'  style='display:none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
-          <param name='embed_code_version' value='3' /> 
-          <param name='site_root' value='' />
-          <param name='name' value='MonsterViz&#47;Dashboard1' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterViz&#47;Dashboard1&#47;1.png' /> 
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-          <param name='filter' value='publish=yes' />
-        </object>
-      </div>                
-      <script type='text/javascript'> 
-      var divElement = document.getElementById('viz1682383312168'); 
-      var vizElement = divElement.getElementsByTagName('object')[0];                    
-      if ( divElement.offsetWidth > 800 ) { 
-        vizElement.style.minWidth='420px';
-      vizElement.style.maxWidth='auto';
-      vizElement.style.width='100%';
-      vizElement.style.minHeight='587px';
-      vizElement.style.maxHeight='887px';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-    } else if ( divElement.offsetWidth > 500 ) { 
-      vizElement.style.minWidth='420px';
-      vizElement.style.maxWidth='auto';
-      vizElement.style.width='100%';
-      vizElement.style.minHeight='587px';
-      vizElement.style.maxHeight='887px';
-      vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-  } else { vizElement.style.width='100%';
-  vizElement.style.height='777px';
-}                     
-var scriptElement = document.createElement('script');                    
-scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-      </script>
-
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Dexterity:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="dexterity" min="1" max="30" placeholder="00">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Constitution:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="constitution" min="1" max="30" placeholder="00">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Intelligence:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="intelligence" min="1" max="30" placeholder="00">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Wisdom:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="wisdom" min="1" max="30" placeholder="00">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Charisma:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="charisma" min="1" max="30" placeholder="00">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Ability to Fly:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-control" id="fly">
+                        <option>No</option>
+                        <option>Yes</option>
+                        </select>
+                    </div>
+                </div>    
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Ability to Swim:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-control" id="swim">
+                        <option>No</option>
+                        <option>Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Legendary Status:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <select class="form-control" id="legendary">
+                        <option>No</option>
+                        <option>Yes</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-lg-12">
+                        <br>
+                        <h4 class="text-light text-center">Party Info for Encounter</h4>
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Number in Party:</h4>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="number-players" min="1" max="6" placeholder="0">
+                    </div>
+                </div>
+                <div class="row py-1">
+                    <div class="col-lg-8">
+                        <h4 class="text-light">Average Party Level:</h4>
+                        <br>
+                    </div>
+                    <div class="col-lg-4">
+                        <input type="integer" class="form-control" id="average-party-level" min="1" max="20" placeholder="0">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                    <button type="button" id="create-monster" onclick="getInputValues()" class="btn btn-primary btn-lg">Create Monster</button>
+                    </div>
+                </div>
+                </form>
+                <br>
+            </div>  
+            <div class="col-lg-8 py-3">
+                <h3 class="text-center text-light">Monster Ability Stats</h3>
+                <div class='tableauPlaceholder' id='viz1682830863480' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterStats&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='MonsterStats&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Mo&#47;MonsterStats&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1682830863480');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1177px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            </div>
+        </div>    
     </div>
-  </div>
-
-<div>
-  <h3>Your Monster Here</h3>
-</div>
-
-<div class="row">
-  <div class="col-md party-stats">Challenge Rating:</div>
-  <div class="col-md party-stats">Average Party Level Needed:</div>
-</div>
-<div class="row">
-  <div class="col-md party-stats">(Some number from flask goes here)</div>
-  <div class="col-md party-stats">(Another number from flask goes here)</div>
-</div>
+    <div class="container-fluid">   
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 bg-light">
+                        <br>
+                        <h2 class="text-center text-danger font-weight-bold">YOUR MONSTER</h2>
+                        <br>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 bg-light">
+                        <h4 class="text-dark text-center">Challenge Rating:</h4>
+                        <h1 class="text-dark text-center" id="new-monster-cr">--</h1>
+                        <br>
+                    </div>
+                    <div class="col-lg-4 bg-light">
+                        <h4 class="text-dark text-center">Adjusted Challenge Rating:</h4>
+                        <h1 class="text-dark text-center" id="new-monster-adjusted-cr">--</h1>
+                        <p class="text-dark text-center" id="new-monster-adj-cr-description"></p>
+                        <br>
+                    </div>
+                    <div class="col-lg-3 bg-light">
+                        <h4 class="text-dark text-center">Difficulty of Encounter:</h4>
+                        <h1 class="text-dark text-center" id="new-monster-difficulty">--</h1>
+                        <p class="text-dark text-center" id="new-monster-difficulty-description"></p>
+                        <br>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+                <br>
+            <div>        
+        </div>    
+    </div>
     <script src="static/js/app.js"></script>
-  </body>
+</body>
 </html>
