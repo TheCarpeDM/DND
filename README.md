@@ -8,7 +8,7 @@
 
 #### Presentation for MVP: https://docs.google.com/presentation/d/1p2H1VOYV1S2l-KxgNv2MTVLyTSLPGuzVoiJnb_SPr14/edit?usp=sharing
 
-Image
+![dashboard](resources/dashboard.png)
 
 ## Overview
 The task was to create a dashboard where a user could input characteristic and ability ratings for a monster and the dashboard will automatically return the predicted challenge rating for the newly created monster. Additional features to this dashboard will be having the monster database pull statistical and categorical summaries to the webpage dashboard through a Tableau dashboard as well as additional values for adjusted challenge rating and encounter difficulty when given party level and size.
@@ -20,7 +20,7 @@ This analysis is looking to answer 3 large questions in order to properly build 
 2. Can we adjust the monster’s challenge rating change for party size?
 3. Can we predict the difficulty of an encounter with this monster for a specific party?
 
-Image
+![dataflow](resources/dataflow.png)
 
 ## Process and Analysis
 ### Technology Used
@@ -43,8 +43,6 @@ Image
 
 ### Steps
 #### Dataset
-**Original Dataset and Data**
-
 **Main Data Used: [DnD 5e Monsters | Kaggle](https://www.kaggle.com/datasets/mrpantherson/dnd-5e-monsters)**
 
 This data gave us many monsters and their features to use for our regression.
@@ -109,7 +107,7 @@ Table 2: "monster_stats" from cleaned_monster_stats.csv
 - Foreign Key: cr (challenge) = cr.cr_to_xp
     - many to one relationship
 
-IMAGE
+![ERD](data/database/ERD_image.PNG)
 
 AWS RDS (Postgres)
 This was pretty simple because you're just connecting the AWS RDS(POstgres) to a local pgAdmin4 database to create intial tables and structure from ERD. Deciding to import cr_to_xp allowed us to run the alter table for the foreign key connection after uploading the monster_stats table.
@@ -117,14 +115,20 @@ This was pretty simple because you're just connecting the AWS RDS(POstgres) to a
 #### Machine Learning
 **Challenge Rating Linear Regression**
 
-Based on our dataset, we used multiple linear regression to evaluate the relationship between different monster characteristics (size, ac, hp, legendary, str, dex, con, int, wis, cha, fly, swim, and type) to determine the monster's challenge rating (cr). The majority of our dataset was numeric where a higher number normally higher ability which would lead to a higher challenge. We one hot encoded the categorical values and then created our target (cr) and features (all monster abilities). We then used scikit learn to split our data into training and testing groups, created the LinearRegression() model, fit the data and predicted the new values. After running the model scores the Training Score came back at 94% accuracy and the Test Score came back at 88% accuracy. We were then able to pull our coefficents and intercept to implement the Linear Regression formula into the JavaScript. Some of the majority findings from the model are that a monster’s challenge rating can be predicted rather accurately and that the variables with the largest coefficients were a monster’s type which means the type factors in quite a bit. We will likely in future want to look at removing certain variables and test if that changes our accuracy.
+Based on our dataset, we used multiple linear regression to evaluate the relationship between different monster characteristics (size, ac, hp, legendary, str, dex, con, int, wis, cha, fly, swim, and type) to determine the monster's challenge rating (cr). The majority of our dataset was numeric where a higher number normally higher ability which would lead to a higher challenge. We one hot encoded the categorical values and then created our target (cr) and features (all monster abilities). We then used scikit learn to split our data into training and testing groups, created the LinearRegression() model, fit the data and predicted the new values. After running the model scores the **Training Score** came back at **94%** accuracy and the **Test Score** came back at **88%** accuracy. We were then able to pull our coefficents and intercept to implement the Linear Regression formula into the JavaScript. Some of the majority findings from the model are that a monster’s challenge rating can be predicted rather accurately and that the variables with the largest coefficients were a monster’s type which means the type factors in quite a bit. We will likely in future want to look at removing certain variables and test if that changes our accuracy.
 
-IMAGE
+![onehot1](resources/onehot1.png)
+![onehot2](resources/onehot2.png)
+![onehot3](resources/onehot3.png)
+
+**Coefficient Values:**
+
+![coefficients](resources/coefficients.png)
 
 **Monster XP Regression**
-This was a simple linear regression with one independent variable with one dependent variable. Taking the values of the feature (CR) and running t fit on the target (XP). This provided a 94% rating which was expected. There's likely a better fit for this because the formula is more exponential than linear because as the cr goes up the xp goea up at higher rate. If there was more time we would want to look into this as well, but doesn't seem like a large factor in the total accuracy of the dashboard.
+This was a simple linear regression with one independent variable with one dependent variable. Taking the values of the feature (CR) and running t fit on the target (XP). This provided a **94%** accuracy rating which was somewhat expected. There's likely a better fit for this because the formula is more exponential than linear because as the cr goes up the xp goea up at higher rate. If there was more time we would want to look into this as well, but doesn't seem like a large factor in the total accuracy of the dashboard.
 
-IMAGE
+![linear regression plotted](resources/screenshot-localhost_8888-2023.05.03-11_02_09.png)
 
 #### Dashboard
 The end product the user will see and use where the Tableau Dashboard can be analyzed, values can be input into the HTML form, JavaScript is ran when the "create monster" button is clicked, and then the JavaScript will return the new predicted values to the HTML.
@@ -137,7 +141,7 @@ Created 4 interactive diagrams for the user to look through. This was designed t
 - Type Pie Chart: shows percent each type of monster
 - Percent of Total: percent of monsters that have Legendary,  Fly or  Swim as a feature
 
-IMAGE
+![tableau dashboard](resources/tableau.png)
 
 **JavaScript**
 
@@ -147,15 +151,17 @@ The formulas function uses the intercept and coeffiencts from the CR Linear Regr
 
 The addtoHTML is relatively simple. It runs the difficulty through an if statement to assign the right message for the encounter difficulty, otherwise it's just using inner.HTML and matching it the HTML "id" that the value will update the content inside of.
 
+![javascript](resources/javascript.png)
+
 **HTML/CSS**
 
 The HTML and CSS were kept simple using Bootstrap. The largest effort was getting all the drop downs foramtted correctly. Most of the time the JS would have an event listeners but with the simplest version of our MVP we were able to triggered the function by adding onclick="getInputValues()" inside the div of the button. The display for the Your Monster section will be overwritten everytime the create monster button is clicked.
 
 Before:
-IMAGE
+![before_html](resources/before_html.png)
 
 After:
-IMAGE
+![after_html](resources/after_html.png)
 
 ## Future Considerations
 There are many directions to go with future iterations of this dashboard. The large iteration would be setting up a **Python Flask API**. This would allow the JavaScript to call this API and run the imputed values against a running learning model with an active database. This also relieves the need to manually update the formulas in the JavaScript. This was a little out of scope for the MVP but would definitely make further development easier as well as allow for easier inclusion of more data when available. With more time this could definitely be done.
