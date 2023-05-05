@@ -114,8 +114,6 @@ IMAGE
 AWS RDS (Postgres)
 This was pretty simple because you're just connecting the AWS RDS(POstgres) to a local pgAdmin4 database to create intial tables and structure from ERD. Deciding to import cr_to_xp allowed us to run the alter table for the foreign key connection after uploading the monster_stats table.
 
-IMAGE
-
 #### Machine Learning
 **Challenge Rating Linear Regression**
 
@@ -152,6 +150,12 @@ The addtoHTML is relatively simple. It runs the difficulty through an if stateme
 **HTML/CSS**
 
 The HTML and CSS were kept simple using Bootstrap. The largest effort was getting all the drop downs foramtted correctly. Most of the time the JS would have an event listeners but with the simplest version of our MVP we were able to triggered the function by adding onclick="getInputValues()" inside the div of the button. The display for the Your Monster section will be overwritten everytime the create monster button is clicked.
+
+Before:
+IMAGE
+
+After:
+IMAGE
 
 ## Future Considerations
 There are many directions to go with future iterations of this dashboard. The large iteration would be setting up a **Python Flask API**. This would allow the JavaScript to call this API and run the imputed values against a running learning model with an active database. This also relieves the need to manually update the formulas in the JavaScript. This was a little out of scope for the MVP but would definitely make further development easier as well as allow for easier inclusion of more data when available. With more time this could definitely be done.
